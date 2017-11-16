@@ -1,0 +1,22 @@
+<p>
+  main-content works!
+
+  Quantity:
+  <input #txtQuantity name="txtQuantity" type="text"  maxlength="2" ([ngModel])="quantity" ng-class="alert-error" required restrict-to="[0-9]" restrict-input="^[0-9]*$" ng-pattern="onlyNumbers"/>
+ <br>
+  <input type="number" ng-init="1" min="0" max="99" maxlength="2" name="inputName" ([ngModel])="quantity" restrict-to="[0-9]" >  maxlength not working
+<br>
+  <input type="text" name="number" ng-model="num_things" numeric-only ([ngModel])="quantity">
+<br>
+  <input restrict-input="^[0-9-]*$" maxlength="2" type="text" class="test" ([ngModel])="quantity"/>
+
+</p>
+<div *ngIf="!quantity.$error" ng-class="alert-danger" >
+      please fill in quantity!
+</div>
+
+test
+
+{{quantity}}
+
+
