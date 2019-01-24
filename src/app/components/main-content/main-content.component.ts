@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainContentComponent implements OnInit {
 
-  quantity:number;
+  quantity: number;
 
   constructor() { }
 
@@ -15,5 +15,5 @@ export class MainContentComponent implements OnInit {
     this.quantity = 12;
   }
 
-  
+
 }
